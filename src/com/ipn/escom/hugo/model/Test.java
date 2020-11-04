@@ -6,13 +6,22 @@ public class Test {
 
 	public static void main(String[] args) {
 //		LeerAutomata leer = new LeerAutomata();
-		AutomataD a = new AutomataD();
+		AutomataD determinista = new AutomataD();
 		
-		a.cargarDesde("C:\\Users\\tecmoi.jrodriguez\\automataDeterminista.af");
+		determinista.cargarDesde("C:\\Users\\tecmoi.jrodriguez\\automataDeterminista.af");
 		
 		String cadena = "ab";
 		
-		a.acepta(cadena);
+		System.out.println(determinista.acepta(cadena));
+		
+		
+		AutomataD noDeterminista = new AutomataD();
+		
+		noDeterminista.cargarDesde("C:\\Users\\tecmoi.jrodriguez\\automataDeterminista.af");
+		
+		String cadenaN = "ab";
+		
+		System.out.println(noDeterminista.acepta(cadenaN));
 
 //		a.guardar("C:\\Users\\tecmoi.jrodriguez\\hugoautomata12.af");
 		/*

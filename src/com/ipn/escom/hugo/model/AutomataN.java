@@ -21,8 +21,6 @@ public class AutomataN extends Automata {
 		}
 	}
 	
-	
-
 	public void agregarTransicion(int inicio, int fin, char simbolo) {
 		if (this.transiciones.isEmpty()) {
 			this.transiciones.add(new Transicion(inicio, fin, simbolo));
